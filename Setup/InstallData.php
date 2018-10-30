@@ -55,7 +55,7 @@ class InstallData implements InstallDataInterface
 
     public function prepareCms(): void
     {
-        $content = '{{block class="Edvardas\MyFirstExtension\Block\FeaturedProductsBlock" template="Edvardas_MyFirstExtension::featured-product-list.phtml"}}';
+        $layout = '<referenceContainer name="content"><block name="content-block" class="Edvardas\MyFirstExtension\Block\FeaturedProductsList" template="Edvardas_MyFirstExtension::featured-product-list.phtml" /></referenceContainer>';
         $cmsPageData = [
             'title' => 'Featured products', // cms page title
             'page_layout' => '1column', // cms page layout
@@ -63,10 +63,11 @@ class InstallData implements InstallDataInterface
             'meta_description' => 'Featured products page', // cms page description
             'identifier' => 'featured-products-page', // cms page url identifier
             'content_heading' => 'Featured products page', // Page heading
-            'content' => $content, // page content
+            'content' => '', // page content
             'is_active' => 1, // define active status
             'stores' => [0], // assign to stores
-            'sort_order' => 0 // page sort order
+            'sort_order' => 0, // page sort order
+            'layout_update_xml' => $layout
         ];
 
         // create page

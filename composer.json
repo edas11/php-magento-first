@@ -1,0 +1,12 @@
+{
+    "name": "edvardas/myfirstextension",
+    "description": "My first extension",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "Edvardas Rybakovas",
+            "email": "edas1123@gmail.com"
+        }
+    ],
+    "require": {}
+}
