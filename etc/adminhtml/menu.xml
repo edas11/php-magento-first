@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Edvardas_MyFirstExtension" title="My first extension" module="Edvardas_MyFirstExtension" sortOrder="20" dependsOnModule="Edvardas_MyFirstExtension" resource="Edvardas_MyFirstExtension::extension"/>
+        <add id="Edvardas_MyFirstExtension::index" title="My first extension" module="Edvardas_MyFirstExtension" action="myfirstextension/index" parent="Edvardas_MyFirstExtension" sortOrder="20" dependsOnModule="Edvardas_MyFirstExtension" resource="Edvardas_MyFirstExtension::extension"/>
+    </menu>
+</config>

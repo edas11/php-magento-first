@@ -1,0 +1,11 @@
+<table>
+    <tr>
+        <th>Name</th>
+    </tr>
+    <?php $products = $block->getFeaturedProducts();
+        foreach ($products as $singleProduct ) {?>
+            <tr>
+                <td><?php echo $singleProduct->getSku(); ?></td>
+            </tr>
+    <?php } ?>
+</table>
